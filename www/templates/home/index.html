@@ -1,0 +1,124 @@
+
+
+<ion-view view-title="index">
+
+
+  <ion-header-bar class="bar bar-header item-input-inset " style="background-color: #28a54c">
+    <a class="button button-clear icon-right ion-android-arrow-dropdown" style="color: #fff ; font-size: smaller" ng-controller="IndexCtrl" ng-click="openModal()">全国</a>
+    <div style="width:80% " align="center"><span style="color: #fff;font-size: larger;   ">dituibang</span></div>
+    <a class="button button-clear icon-right " href="#" style="color: #fff; background-color:#28a54c ">...</a>
+
+  </ion-header-bar>
+
+
+
+  <ion-content class="padding " hide-nav-bar="true">
+    <div>
+
+      <div>
+        <a class="item item-thumbnail-left item-icon-left" href="#/tab/task">
+          <img src="../../img/nuomi.jpg">
+          <h2 style="font-size: larger;padding-top: 0.5em">百度糯米</h2>
+          <span class="item-note" style="color: #e6b500;font-size: larger">￥45</span>
+          <span class="item-note" style="font-size: x-small;">佣金</span>
+          <p style="padding-top: 0.3em">帮助商家注入平台</p>
+
+          <div style="padding-top: 0.6em;">
+          <span style="border-radius: 1em;border: #cfcfcf;border-style: solid;border-width: 2px;font-size: smaller;color: #616161">&nbsp;不限城市&nbsp;</span>
+          <span style="border-radius: 1em;border: #cfcfcf;border-style: solid;border-width: 2px;font-size: smaller;color: #616161">&nbsp;剩余214份&nbsp;</span>
+          <span style="border-radius: 1em;border: #cfcfcf;border-style: solid;border-width: 2px;font-size: smaller;color: #616161">&nbsp;03-18结束&nbsp;</span>
+          </div>
+
+        </a>
+      </div>
+
+
+      <div>
+        <a class="item item-thumbnail-left item-icon-left" href="#">
+          <img src="../../img/uber.jpg">
+          <h2 style="font-size: larger;padding-top: 0.5em">UBER司机端</h2>
+          <span class="item-note" style="color: #e6b500;font-size: larger">￥45</span>
+          <span class="item-note" style="font-size: x-small;">佣金</span>
+          <p style="padding-top: 0.3em">帮助商家注入平台</p>
+
+          <div style="padding-top: 0.6em;">
+            <span style="border-radius: 1em;border: #cfcfcf;border-style: solid;border-width: 2px;font-size: smaller;color: #616161">&nbsp;不限城市&nbsp;</span>
+            <span style="border-radius: 1em;border: #cfcfcf;border-style: solid;border-width: 2px;font-size: smaller;color: #616161">&nbsp;剩余214份&nbsp;</span>
+            <span style="border-radius: 1em;border: #cfcfcf;border-style: solid;border-width: 2px;font-size: smaller;color: #616161">&nbsp;03-18结束&nbsp;</span>
+          </div>
+
+        </a>
+      </div>
+
+      <div>
+        <a class="item item-thumbnail-left item-icon-left" href="#">
+          <img src="../../img/jiedai.jpg">
+          <h2 style="font-size: larger;padding-top: 0.5em">借贷宝企业版</h2>
+          <span class="item-note" style="color: #e6b500;font-size: larger">￥45</span>
+          <span class="item-note" style="font-size: x-small;">佣金</span>
+          <p style="padding-top: 0.3em">帮助商家注入平台</p>
+
+          <div style="padding-top: 0.6em;">
+            <span style="border-radius: 1em;border: #cfcfcf;border-style: solid;border-width: 2px;font-size: smaller;color: #616161">&nbsp;不限城市&nbsp;</span>
+            <span style="border-radius: 1em;border: #cfcfcf;border-style: solid;border-width: 2px;font-size: smaller;color: #616161">&nbsp;剩余214份&nbsp;</span>
+            <span style="border-radius: 1em;border: #cfcfcf;border-style: solid;border-width: 2px;font-size: smaller;color: #616161">&nbsp;03-18结束&nbsp;</span>
+          </div>
+
+        </a>
+      </div>
+
+      <div>
+        <a class="item item-thumbnail-left item-icon-left" href="#">
+          <img src="../../img/shuiguo.jpg">
+          <h2 style="font-size: larger;padding-top: 0.5em">水果推广</h2>
+          <span class="item-note" style="color: #e6b500;font-size: larger">￥45</span>
+          <span class="item-note" style="font-size: x-small;">佣金</span>
+          <p style="padding-top: 0.3em">帮助商家注入平台</p>
+
+          <div style="padding-top: 0.6em;">
+            <span style="border-radius: 1em;border: #cfcfcf;border-style: solid;border-width: 2px;font-size: smaller;color: #616161">&nbsp;不限城市&nbsp;</span>
+            <span style="border-radius: 1em;border: #cfcfcf;border-style: solid;border-width: 2px;font-size: smaller;color: #616161">&nbsp;剩余214份&nbsp;</span>
+            <span style="border-radius: 1em;border: #cfcfcf;border-style: solid;border-width: 2px;font-size: smaller;color: #616161">&nbsp;03-18结束&nbsp;</span>
+          </div>
+
+        </a>
+      </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+  </ion-content>
+</ion-view>
+
+
+
+<script id="contact-modal.html" type="text/ng-template">
+  <div class="modal">
+    <ion-header-bar>
+      <h1 class="title">Edit Contact</h1>
+    </ion-header-bar>
+    <ion-content>
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Name</span>
+          <input type="text" ng-model="contact.name">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Info</span>
+          <input type="text" ng-model="contact.info">
+        </label>
+      </div>
+      <button class="button button-full button-energized" ng-click="closeModal()">Done</button>
+    </ion-content>
+  </div>
+</script>
+
+
+
